@@ -1,0 +1,22 @@
+PhonifyString
+=============
+
+PhonifyString generates a virtual attribute with the suffix of '_number' to be used in forms and such.  On save, the contents are parsed into a phone number format like (123)456-7890 and saved in the original attribute.
+
+
+Options
+=======
+
+:required (default: true)
+- 
+
+
+Example
+=======
+
+class Store < ActiveRecord::Base
+	phonify_string :primary_phone, :secondary_phone, :required => true
+end
+
+
+Copyright (c) 2008 [George 'Jake' Wendt III (upillar.com)], released under the MIT license
