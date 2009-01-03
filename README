@@ -19,4 +19,12 @@ class Store < ActiveRecord::Base
 end
 
 
+
+
+Add controller/view usage ...
+
+
+
+
+
 Copyright (c) 2008 [George 'Jake' Wendt III (upillar.com)], released under the MIT license

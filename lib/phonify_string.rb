@@ -7,8 +7,6 @@ module PhonifyString
 
 		names.each do |name|
 
-			#	This, apparently, gives direct access to @#{name}_invalid
-			#	which was unexpected.  Can use this in the validations below.
 			self.send(:attr_accessor, "#{name}_invalid".intern )
 
 			if self.accessible_attributes
