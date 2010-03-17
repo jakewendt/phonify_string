@@ -6,7 +6,7 @@ $:.unshift "#{File.dirname(__FILE__)}/../lib"
 require 'phonify_string'
 ActiveRecord::Base.send(:extend, PhonifyString )
 
-ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :dbfile => ":memory:")
+ActiveRecord::Base.establish_connection(:adapter => "sqlite3", :database => ":memory:")
 
 def setup_db
 	ActiveRecord::Schema.define(:version => 1) do
