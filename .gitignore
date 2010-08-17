@@ -1,3 +1,5 @@
 .svn/
 versions/
 rdoc/
+pkg/
+.gitignore

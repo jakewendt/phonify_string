@@ -1,30 +1,29 @@
-PhonifyString
-=============
+= PhonifyString
 
 PhonifyString generates a virtual attribute with the suffix of '_number' to be used in forms and such.  On save, the contents are parsed into a phone number format like (123)456-7890 and saved in the original attribute.
 
+== Attempting Gemification with Jeweler
 
-Options
-=======
+ vi Rakefile
+ rake version:write
+ rake gemspec
+ rake install
+
+ rake version:major:bump
+ rake release
+
+== Options
 
 :required (default: true)
 - 
 
 
-Example
-=======
+== Example
 
 class Store < ActiveRecord::Base
 	phonify_string :primary_phone, :secondary_phone, :required => true
 end
 
-
-
-
 Add controller/view usage ...
-
-
-
-
 
 Copyright (c) 2008 [George 'Jake' Wendt III (upillar.com)], released under the MIT license

@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jakewendt-phonify_string}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jake"]
@@ -13,29 +13,16 @@ Gem::Specification.new do |s|
   s.description = %q{longer description of your gem}
   s.email = %q{github@jake.otherinbox.com}
   s.extra_rdoc_files = [
-    "README"
+    "README.rdoc"
   ]
   s.files = [
-    ".gitignore",
-     "MIT-LICENSE",
-     "README",
-     "Rakefile",
-     "VERSION",
-     "init.rb",
-     "install.rb",
-     "lib/phonify_string.rb",
-     "tasks/phonify_string_tasks.rake",
-     "test/phonify_string_test.rb",
-     "uninstall.rb"
+    "lib/phonify_string.rb"
   ]
   s.homepage = %q{http://github.com/jakewendt/phonify_string}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{one-line summary of your gem}
-  s.test_files = [
-    "test/phonify_string_test.rb"
-  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
