@@ -2,6 +2,14 @@
 
 PhonifyString generates a virtual attribute with the suffix of '_number' to be used in forms and such.  On save, the contents are parsed into a phone number format like (123)456-7890 and saved in the original attribute.
 
+== Usage
+
+Contains a collection of complex assertions.
+
+ config.gem 'jakewendt-phonify_string',
+   :lib    => 'phonify_string',
+   :source => 'http://rubygems.org'
+
 == Attempting Gemification with Jeweler
 
  vi Rakefile
